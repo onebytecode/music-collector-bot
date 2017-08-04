@@ -4,7 +4,7 @@
   "description": "Smart bot for fetching music data from all over the world",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --timeout 10000",
+    "test": "INTERCEPT=true mocha --compilers js:babel-core/register --timeout 10000",
     "cover": "istanbul cover node_modules/.bin/_mocha "
   },
   "repository": {
@@ -23,6 +23,7 @@
     "chai": "^4.1.0",
     "chai-http": "^3.0.0",
     "mocha": "^3.5.0",
+    "nock": "^9.0.14",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
