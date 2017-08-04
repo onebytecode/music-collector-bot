@@ -1,9 +1,8 @@
 // TEST ROOT
 
-module.exports = () => {
+const setup = require('./setup.test')()
 
-  const setup = require('./setup.test')()
-  
+
+describe('Tests', () => {
   require('./dispencer')(setup)
-
-}
+})

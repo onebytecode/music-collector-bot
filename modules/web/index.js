@@ -5,10 +5,10 @@ module.exports = () => {
 
   const webBundle = { request }
 
-  const web-request = require('./web-request')(webBundle)
+  const webRequest = require('./web-request')(webBundle)
 
   const modules = {
-    web-request
+    webRequest
   }
 
   return modules

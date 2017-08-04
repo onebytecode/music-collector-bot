@@ -2,9 +2,13 @@
 
 
 module.exports = ({ request }) => {
-  const get  =  async (url) => {
-    const response = await request.get(url)
-    return response
+  const get  =  (url) => {
+    return new Promise((resolve, reject) => {
+      request.get(url, (err, response, body) => {
+        if (err) return reject(err)
+        resolve({ response, body })
+      })
+    })
   }
 
   const methods = {

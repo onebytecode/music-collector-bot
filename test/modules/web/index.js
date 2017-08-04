@@ -3,6 +3,6 @@
 module.exports = (b) => {
   const { web, chai, assert, expect } = b
   const { webRequest } = web
-  const 
-  require('./web-request.test')(b)
+  const webRequestParams = { chai, assert, expect, webRequest }
+  require('./web-request.test')(webRequestParams)
 }

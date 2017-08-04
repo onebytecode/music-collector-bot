@@ -1,14 +1,14 @@
 // TESTS SETUP POINT
 
 const chai = require('chai')
-const chai-http = require('chai-http')
+const chaiHttp = require('chai-http')
 const assert = chai.assert
 const expect = chai.expect
 
-chai.use(chai-http)
+chai.use(chaiHttp)
 
 module.exports = () => {
-  
+
   const setup = {
     chai,
     assert,

@@ -4,7 +4,8 @@
   "description": "Smart bot for fetching music data from all over the world",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --timeout 10000"
+    "test": "mocha --compilers js:babel-core/register --timeout 10000",
+    "cover": "istanbul cover node_modules/.bin/_mocha "
   },
   "repository": {
     "type": "git",
