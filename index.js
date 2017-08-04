@@ -1,0 +1,5 @@
+// ROOT POINT
+
+module.exports = () => {
+  
+}
