@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "INTERCEPT=true mocha --compilers js:babel-core/register --timeout 10000",
-    "cover": "istanbul cover node_modules/.bin/_mocha "
+    "cover": "NODE_ENV=test INTERCEPT=true istanbul cover node_modules/.bin/_mocha "
   },
   "repository": {
     "type": "git",

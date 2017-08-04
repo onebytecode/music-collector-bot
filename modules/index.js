@@ -2,9 +2,11 @@
 
 module.exports = () => {
   const web = require('./web')()
+  const requestBuilder = require('./request_builder')()
 
   const modules = {
-    web
+    web,
+    requestBuilder
   }
 
   return modules
