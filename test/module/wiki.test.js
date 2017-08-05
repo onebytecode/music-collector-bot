@@ -7,7 +7,7 @@ module.exports = ({ requestBuilder, web }) => {
   const { wiki } = requestBuilder
   const { webRequest } = web
 
-  const bands = ['metallica', 'guns n\' roses', 'slayer', 'sepultura', 'motley crue']
+  const bands = ['metallica', 'Guns_N\'_Roses', 'slayer', 'sepultura', 'Motley_Crue']
   const paths = []
   bands.forEach(el => paths.push(wiki.getPage(el)))
 

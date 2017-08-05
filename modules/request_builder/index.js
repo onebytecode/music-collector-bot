@@ -2,9 +2,11 @@
 
 module.exports = () => {
   const wiki = require('./wiki')()
+  const helpers = require('./helpers')
 
   const requestBuilder = {
-    wiki
+    wiki,
+    helpers
   }
 
   return requestBuilder

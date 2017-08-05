@@ -5,9 +5,9 @@ module.exports = (wiki) => {
     const endpoint = "https://ru.wikipedia.org/w/api.php?action=query&titles={0}&format=json"
     const bands = ['guns and roses', 'metallica', 'three solo play er s']
     const expectations = [
-      endpoint.replace('{0}', 'guns%20and%20roses'),
-      endpoint.replace('{0}', 'metallica'),
-      endpoint.replace('{0}', 'three%20solo%20play%20er%20s')
+      endpoint.replace('{0}', 'Guns_And_Roses'),
+      endpoint.replace('{0}', 'Metallica'),
+      endpoint.replace('{0}', 'Three_Solo_Play_Er_S')
     ]
 
     bands.forEach((band, i) => {
@@ -23,9 +23,9 @@ module.exports = (wiki) => {
     const endpoint = "https://ru.wikipedia.org/w/api.php?action=query&titles={0}&format=json&prop=categories"
     const bands = ['guns and roses', "slayer", 'megadeth']
     const expectations = [
-      endpoint.replace('{0}', 'guns%20and%20roses'),
-      endpoint.replace('{0}', 'slayer'),
-      endpoint.replace('{0}', 'megadeth')
+      endpoint.replace('{0}', 'Guns_And_Roses'),
+      endpoint.replace('{0}', 'Slayer'),
+      endpoint.replace('{0}', 'Megadeth')
     ]
 
     bands.forEach((band, i) => {
