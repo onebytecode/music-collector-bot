@@ -1,6 +1,6 @@
 // TEST ROOT
 
-const setup = require('./setup.test')()
+const setup = require('./setup')()
 
 
 describe('Tests', () => {

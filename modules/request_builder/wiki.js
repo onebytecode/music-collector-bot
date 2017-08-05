@@ -1,8 +1,8 @@
-// BANDS REQUEST MODULE
+// WIKI REQUEST MODULE
 
 module.exports = () => {
   const ruWikiEndpoint = 'https://ru.wikipedia.org/w/api.php'
-  const getWikiBandPath = (name) => {
+  const getBand = (name) => {
     const action = "?action=query"
     const titles = "titles=" + name.trim()
     const format = "format=json"
@@ -12,7 +12,7 @@ module.exports = () => {
   }
 
   const requests = {
-    getWikiBandPath
+    getBand
   }
 
   return requests

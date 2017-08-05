@@ -1,10 +1,10 @@
 // /MODULES REQUEST BUILDER ROOT
 
 module.exports = () => {
-  const bandsRequest = require('./bands_request')()
+  const wiki = require('./wiki')()
 
   const requestBuilder = {
-    bandsRequest
+    wiki
   }
 
   return requestBuilder
