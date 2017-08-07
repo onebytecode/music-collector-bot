@@ -7,7 +7,7 @@ module.exports = ({ web: { webRequest }, interceptor }) => {
   describe('Web-request tests', () => {
     it('should make get request', async () => {
       const url = 'https://google.com'
-      await interceptor.getInterceptor({ urls: [{ name: url, path: '/', response: { statusCode: 200, response: {} } }]})
+      await interceptor.getInterceptor({ urls: [{ name: url, path: '/', res: { statusCode: 200, response: {} } }]})
       try {
         const { response } = await webRequest.get(url + '/')
         assert.equal(response.statusCode, 200)
